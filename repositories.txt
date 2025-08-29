@@ -1,0 +1,5 @@
+camel-tooling/camel-language-server
+camel-tooling/camel-debug-adapter
+camel-tooling/camel-lsp-client-vscode
+camel-tooling/camel-dap-client-vscode
+camel-tooling/vscode-camel-extension-pack
