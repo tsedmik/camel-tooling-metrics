@@ -103,7 +103,7 @@ while read -r repo_name || [[ -n "$repo_name" ]]; do
 
     # Create the CSV filename by replacing slashes with hyphens.
     # For example, 'owner/repo' becomes 'owner-repo.csv'.
-    csv_filename=./out/$(echo "$repo_name" | sed 's/\//-/g').csv
+    csv_filename=$(echo "$repo_name" | sed 's/\//-/g').csv
 
     # If the CSV file doesn't exist, create it and add the header row.
     if [ ! -f "$csv_filename" ]; then
